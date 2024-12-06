@@ -1,6 +1,6 @@
-# Intro_to_AI_Project - Rubik's cube - 2*2*2
+# Intro_to_AI_Project - Rubik's cube 
 
- # SOLVING THE RUBIK’S CUBE: Optimized pathfinding and search Algorithms
+ # Solving the Rubik's cube: Optimized pathfinding and search Algorithms
 
        This project covered how to solve the Rubik's cubes using A*, Bidirectional BFS, and Breadth First Search.
 
