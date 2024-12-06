@@ -1,13 +1,26 @@
-# Intro_to_AI_Project - Rubik's cube 
-
- # Solving the Rubik's cube: Optimized pathfinding and search Algorithms
+# Intro_to_AI_Project -  Solving the Rubik's cube: Optimized pathfinding and search Algorithms
 
        This project covered how to solve the Rubik's cubes using A*, Bidirectional BFS, and Breadth First Search.
 
        In order to solve or determine the shortest path between two states in a 2x2x2 Rubik's Cube, our code implements two algorithms. We 
        have employed A*, Bidirectional BFS, and Breadth-First-Search (BFS).Here is an example of how to use the code.
 
-# Breadth-First-Search Function - shortest_path
+# 2x2 Rubik's Cube State Representation and Permutation Logic
+
+      The structure and movements of a 2x2 Rubik's Cube are defined by this code, which represents the cube's 24 stickers as a tuple of 
+      integers (from 0 to 23). A cubie on the cube is represented by each sticker, and the cubies' various locations are labeled with 
+      variables (flu = 0, luf = 1, etc.) according to their relative face positions.
+
+      Each cubie's location reflects its relationship to the front (red), left (green), up (white), right (blue), rear (orange), and down 
+      (yellow) faces. The cube's state is recorded as a tuple of these identifiers. Permutations that change the cubies' positions are used 
+      to depict cube movements, such as rotations of the front, left, and upper faces. While the perm_inverse function calculates the 
+      inverse permutation for reversing a move, the perm_apply function applies these permutations to the current state. The perm_to_string 
+      function offers a condensed string version of a permutation for convenience of display. Both clockwise and counterclockwise rotations
+      for the front, left, and upper faces are part of the fundamental set of motions. This coding structure effectively facilitates the 
+      exploration and manipulation of Rubik's Cube states.
+      
+#  Algorithms : 
+#  Breadth-First-Search Function - shortest_path
        Shortest_path(start, end) is one function. We supply the initial and final states for resolving our Rubik's Cube in this function. 
        This function begins in the start state and moves through the subsequent states using the BFS algorithm until it reaches the end 
        state. The path/moves that lead to the final state are finally returned as a list.
